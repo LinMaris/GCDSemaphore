@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FBE849F2079C4D800EB065F /* TestViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBE849E2079C4D800EB065F /* TestViewController3.m */; };
 		0FF5D0A1203FE1AD0063F73E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5D0A0203FE1AD0063F73E /* AppDelegate.m */; };
 		0FF5D0A4203FE1AD0063F73E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5D0A3203FE1AD0063F73E /* ViewController.m */; };
 		0FF5D0A7203FE1AD0063F73E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF5D0A5203FE1AD0063F73E /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FBE849D2079C4D800EB065F /* TestViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController3.h; sourceTree = "<group>"; };
+		0FBE849E2079C4D800EB065F /* TestViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController3.m; sourceTree = "<group>"; };
 		0FF5D09C203FE1AC0063F73E /* TestGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF5D09F203FE1AC0063F73E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FF5D0A0203FE1AD0063F73E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FBE849C2079BD1500EB065F /* GCD死锁相关 */ = {
+			isa = PBXGroup;
+			children = (
+				0FBE849D2079C4D800EB065F /* TestViewController3.h */,
+				0FBE849E2079C4D800EB065F /* TestViewController3.m */,
+			);
+			path = "GCD死锁相关";
+			sourceTree = "<group>";
+		};
 		0FF5D093203FE1AC0063F73E = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +84,7 @@
 				0FF5D0B6203FE51E0063F73E /* TestViewController.m */,
 				0FF5D0B9203FF8A70063F73E /* TestViewController2.h */,
 				0FF5D0BA203FF8A70063F73E /* TestViewController2.m */,
+				0FBE849C2079BD1500EB065F /* GCD死锁相关 */,
 				0FF5D0B8203FF8820063F73E /* Other */,
 			);
 			path = TestGCD;
@@ -164,6 +177,7 @@
 				0FF5D0BB203FF8A70063F73E /* TestViewController2.m in Sources */,
 				0FF5D0AF203FE1AD0063F73E /* main.m in Sources */,
 				0FF5D0B7203FE51E0063F73E /* TestViewController.m in Sources */,
+				0FBE849F2079C4D800EB065F /* TestViewController3.m in Sources */,
 				0FF5D0A1203FE1AD0063F73E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

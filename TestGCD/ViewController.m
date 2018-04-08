@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "TestViewController.h"
 #import "TestViewController2.h"
+#import "TestViewController3.h"
 
 @interface ViewController ()
 
@@ -22,11 +23,13 @@
     
 //    [self testGCD];
     
-    [self testGCD2];
+//    [self testGCD2];
     
 //    [self testGCD3];
     
 //    [self testOperationQueue];
+    
+    [self testGCD4];
 }
 
 #pragma mark - 在不同页面多个操作结束后统一操作
@@ -130,9 +133,19 @@
     [queue addOperations:@[operation1, operation2,operation3] waitUntilFinished:NO];
 }
 
+#pragma mark - GCD死锁
+-(void)testGCD4 {
+    
+    TestViewController3 *vc = [TestViewController3 new];
+    vc.view.alpha = 0;
+    [self addChildViewController:vc];
+}
+
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
